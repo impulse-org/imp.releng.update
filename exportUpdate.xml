@@ -28,22 +28,6 @@
 				<param name="feature.dir"     value="../${feature}.feature"/>
 			</antcall>
 		</for>
-<!--	<antcall target="copy.feature">
-			<param name="feature.name"    value="org.eclipse.imp.runtime"/>
-			<param name="feature.version" value="${update.version}"/>
-			<param name="feature.dir"     value="../org.eclipse.imp.runtime.feature"/>
-		</antcall>
-		<antcall target="copy.feature">
-			<param name="feature.name"    value="org.eclipse.imp.lpg"/>
-			<param name="feature.version" value="${update.version}"/>
-			<param name="feature.dir"     value="../org.eclipse.imp.lpg.feature"/>
-		</antcall>
-		<antcall target="copy.feature">
-			<param name="feature.name"    value="org.eclipse.imp"/>
-			<param name="feature.version" value="${update.version}"/>
-			<param name="feature.dir"     value="../org.eclipse.imp.feature"/>
-		</antcall>
-  -->
 		<zip destfile="${zip.file}" basedir="${update.temp.folder}" filesonly="false" whenempty="skip" update="false"/>
 		<delete dir="${update.temp.folder}"/>
 	</target>
@@ -76,10 +60,6 @@
 		<for param="feature" values="${feature.list}">
 			<ant antfile="../${feature}.feature/exportFeature.xml" target="build.feature.jar" dir="../${feature}.feature"/>
 		</for>
-<!--	<ant antfile="../org.eclipse.imp.runtime.feature/exportFeature.xml" target="build.feature.jar" dir="../org.eclipse.imp.runtime.feature"/>
-		<ant antfile="../org.eclipse.imp.feature/exportFeature.xml" target="build.feature.jar" dir="../org.eclipse.imp.feature"/>
-		<ant antfile="../org.eclipse.imp.lpg.feature/exportFeature.xml" target="build.feature.jar" dir="../org.eclipse.imp.lpg.feature"/>
-  -->
 		<echo message="Done building feature jars."/>
 	</target>
 </project>
