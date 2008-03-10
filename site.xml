@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <category-def name="Release Engineering Tools" label="Release Engineering Tools"/>
-   <feature url="features/org.eclipse.imp.releng_1.0.1.jar" id="org.eclipse.imp.releng" version="1.0.1">
-      <category name="Release Engineering Tools"/>
-   </feature>
+  <category-def name="Release Engineering Tools" label="Release Engineering Tools"/>
+
+  <feature url="features/org.eclipse.imp.releng_1.0.1.jar" id="org.eclipse.imp.releng" version="1.0.1">
+    <category name="Release Engineering Tools"/>
+  </feature>
+
+  <feature url="features/org.eclipse.imp.releng_1.0.2.jar" id="org.eclipse.imp.releng" version="1.0.2">
+    <category name="Release Engineering Tools"/>
+  </feature>
+
 </site>
