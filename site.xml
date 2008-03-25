@@ -10,4 +10,8 @@
     <category name="Release Engineering Tools"/>
   </feature>
 
+  <feature url="features/org.eclipse.imp.releng_1.0.6.jar" id="org.eclipse.imp.releng" version="1.0.6">
+    <category name="Release Engineering Tools"/>
+  </feature>
+
 </site>
