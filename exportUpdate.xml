@@ -6,8 +6,8 @@
 	<property name="update.version"     value="${releng.version}"/>
 	<property name="update.temp.folder" value="${basedir}/update.temp.folder"/>
 	<property name="update.destination" value="${basedir}"/>
-	<property name="update.server"      value="orquesta.watson.ibm.com"/>
-	<property name="update.server.dir"  value="/usr/src/imp"/>
+	<property name="update.server"      value="dev.eclipse.org"/>
+	<property name="update.server.dir"  value="."/>
 	<property name="zip.file"           value="${update.destination}/${update.name}_${update.version}.zip"/>
 
 	<property name="feature.list"       value="org.eclipse.imp.releng"/>
