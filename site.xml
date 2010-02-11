@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipse.imp.releng_0.1.19.jar" id="org.eclipse.imp.releng" version="0.1.19">
+   <feature url="features/org.eclipse.imp.releng_0.1.20.jar" id="org.eclipse.imp.releng" version="0.1.20">
       <category name="Release Engineering Tools"/>
    </feature>
    <category-def name="Release Engineering Tools" label="Release Engineering Tools"/>
